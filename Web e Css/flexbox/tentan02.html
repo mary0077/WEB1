@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flexbox</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;}
+body {margin: 3em;}
+header h1 {margin-bottom: 1em; text-align: center;}
+.flex-container{
+display: flex;
+flex-direction:row-reverse;
+justify-content:right;
+align-items:inherit;
+margin-left: auto; margin-right:auto ;
+width: 600px; height: 450px; border: 1px solid #000000;  
+}
+div { color: #2b9191; font-size:1.5em; padding: 12px;background-color: #efe9e9;
+width: 80px;  height: 80px; margin: 15px;
+}
+</style>
+</head>
+<body>
+<header><h1> Layout com Flexbox- | </h1></header>
+<main class="flex-container">
+<div>div</div><div>div</div>
+<div>div</div><div>div</div>
+</main>
+</html>

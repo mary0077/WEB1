@@ -1,0 +1,305 @@
+/* variaveis globais */
+:root{
+    --bordaHeader: #bd2f7d;
+    --tituloSecao:#bd2f7d;
+    --tituloEquipe:#e57373;
+    --bordaFotoEsocialOver: #990772;
+    --link: #bd2f7d;
+    --corTextoBody: rgb(125,125,125);
+    --corBody: rgb(225,225,225);
+    --bgEquipe:#eceff1;
+    --bgOqfazemosEmenu-footer: #cfd8dc;
+    --logoTextoEiconesFooter: hsl(200,17%,68%);
+    --bordaOqfazemosEsubtituloEquipe: #d9739e;
+    --bgFooterEbordaOqfazemos:#781b4e;
+    --bgNews:hsl(200,30%,31%);
+    /* titulo, subtitulos e texto */
+    --textoBody: "Roboto", sans-serif;
+    --textoMenu: "Roboto Condensed";
+    --textoBotaoSubtitulo:"Montserrat" ;
+}
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--textoBody);
+    color: var(--corTextoBody);
+    background-color: var(--corBody);
+}
+div#header{
+    height: 30em;
+    background-image: url("../slider/slider-01.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 4px solid var(--bordaHeader);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+/* image replacement */
+header#logo h1{
+    background-image: url('../imagens/logoProDesign-header.svg');
+    background-repeat: no-repeat;
+    width: 200px; height: 82px;
+}
+header#logo h1 a{
+    display: block;
+    height: 100%;
+  text-indent: -999999em;   /* fir */
+}
+/* formatar o formulario */
+input[type="text"],input[type="submit"]{
+    border-style: none;
+    height: 2em;
+    font-size: 0.875rem;
+}
+input[type="text"]{
+    color: var(--corTextoBody);
+    width: 300px;
+    padding: 0 8px;
+}
+input[type="submit"]{
+    background-color: var(--link);
+    color: #fff;
+    width: 100px;
+    text-transform: uppercase;
+    font-family: var(--textoBotaoEsubtitulo);
+    font-weight: 700;
+    cursor: pointer;
+}
+/* formatar top */
+section#top{
+display: flex;
+align-items: center;
+gap: 16em;
+margin-top: 2em;
+}
+
+/* formatação  do menu */
+ section#menu{
+    font-family: var (--textoMenu);
+    text-transform: uppercase;
+ }
+section#menu nav ul {
+    display: flex;
+}
+
+section#menu nav ul li{
+    width: 6em ; height: 3em;
+    background-color: #fff; 
+    margin-right: 1px;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 3em;
+} 
+
+section#menu nav ul li a {
+    text-decoration: none;
+    color : var(--link);
+    display: block;
+}
+section#menu nav ul li a:hover,
+section#menu nav ul li:target a,
+section#menu nav ul li a:focus{
+background-color: var(--link);
+color: #fff;
+}
+
+/*formatação da seção o que fazemos */
+
+section#oquefazemos h2,
+section#nossaequipe h2{
+    color: var(--tituloSecao);
+    font-size: 3em;
+    font-weight: 300;
+    letter-spacing: 4px;
+    margin-bottom: 0.7em;
+}
+section#oquefazemos{
+ background-color: var(--bgOqfazemosEmenu-footer);
+ border-bottom: 4px solid  var(--bgFooterEbordaOqfazemos);
+ padding: 3em;
+
+}
+div#row-oquefazemos,
+div#row-nossaequipe{
+    display: flex;
+    flex-flow: column wrap;
+    align-content: space-around;
+}
+
+section#content-oquefazemos,
+section#content-nossaequipe{
+    display: flex;
+    justify-content: center;
+}
+
+section#content-oquefazemos section{
+    width: 15em;
+    background-color: 2px solid  var(--bgFooterEbordaOqfazemos);
+    margin: 0 0.471rem;
+}
+section#content-oquefazemos section h3{
+font-size: 1.142em;
+color: var(--tituloSecao);
+font-family: var(--textoBotaoSubtitulo);
+text-transform: uppercase ;
+padding: 16px 0 2px 16px;
+}
+
+section#content-oquefazemos section p {
+padding: 10px 16px;
+list-style: 20px;
+
+
+}
+/*formatação da secao da nossa equipe*/
+
+section#nossaequipe{
+    padding: 3em;
+}
+
+section#content-nossaequipe section {
+    width: 20em;
+    margin-right: 1.25em;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+}
+section#content-nossaequipe header{
+    margin-top: 0.5em;
+    text-align: center;
+}
+section#content-nossaequipe section img{
+    border: 6px solid  var(--bordaFotoEsocialOver);
+    border-radius: 50%;
+    margin-right: 12px;
+}
+section#content-nossaequipe h3,
+section#content-nossaequipe h4,
+section#content-nossaequipe a{
+
+    text-transform: uppercase;
+    font-family: var(--textoBotaoSubtitulo)
+}
+section#content-nossaequipe h3{
+    color: var(--tituloSecao);
+    font-weight: 700;
+    margin: 0 0.5em;
+    font-size: 1rem;
+}
+section#content-nossaequipe h4{
+    color: var(--tituloEquipe);
+    font: size 0.75rem; 
+    margin: 1.2em;
+}
+section#content-nossaequipe p{
+font-size: 0.8125rem;
+line-height: 19px;
+margin-bottom: 0.9em;
+
+}
+section#content-nossaequipe a{
+    text-decoration: none;
+    color: var(--link);
+    text-align: center;
+}
+section#content-nossaequipe a span{
+display: inline-block;
+width: 16px; height: 16px;
+background: url('../imagens/btn-plus.png') no-repeat ;
+margin-right: 4px;
+vertical-align: bottom;
+}
+/* formatação de newsletter */
+section#newsletter{
+    background-color:  var(--bgNews);
+    padding: 2.4em 0;
+
+}
+section#content-newsletter{
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+
+}
+section#content-newsletter p{
+    font-size: 1.1em;
+    font-family:  var(--textoBotaoSubtitulo);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--corBody);
+}
+section#content-newsletter p::before{
+    content:  url('../imagens/envelope.png');
+    margin-right: 1em; vertical-align: middle;
+}
+
+/*formatação  footer */
+div#footer{
+    background-color: var(--bgFooterEbordaOqfazemos);
+    padding: 3em 0;
+}
+section#logo-footer p{
+width: 135px; height: 55px;
+background: url('../imagens/logo-ProDesign-footer.svg') no-repeat;
+background-size: cover;
+}
+section#logo-footer p a{
+display: block; height: 100%;
+text-indent: -999999em;
+
+}
+div#footer footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+}
+/*formatção menu footer */
+nav#menu-footer ul {
+    display: flex; gap: 1em;
+}
+nav#menu-footer ul li a{
+    text-decoration: none;
+    color: var(--corBody);
+    font-size: 1em;
+    text-transform: uppercase;
+}
+nav#menu-footer ul li a:hover{
+    text-decoration: underline;
+}
+/*formatação  da rede social  com sprit*/
+nav#social dl{
+    display: flex; gap: 1em;
+}
+nav#social dl dd{
+    width: 40px; height: 40px;
+   
+
+}
+nav#social dl dd a{
+    display: block; height: 100%;
+    text-indent: -999999em;
+    background: url('../imagens/sprite-social.png') no-repeat;
+}
+nav#social dl dd:nth-child(1) a{background-position: 0 0;}
+nav#social dl dd:nth-child(2) a{background-position: -40px 0;}
+nav#social dl dd:nth-child(3) a{background-position: -80px 0;}
+nav#social dl dd:nth-child(4) a{background-position: -120px 0;}
+
+
+nav#social dl dd:nth-child(1) a:hover{background-position: 0 -40px;}
+nav#social dl dd:nth-child(2) a:hover{background-position: -40px -40px;}
+nav#social dl dd:nth-child(3) a:hover{background-position: -80px -40px;}
+nav#social dl dd:nth-child(4) a:hover{background-position: -120px -40px;}
+
+
+
+
+
+
+
+

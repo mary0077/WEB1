@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Flexbox-III</title>
+<style>
+*,
+*::befone,
+*::after {
+box-sizing: content-box;
+}
+body {
+margin-top: 320x;
+margin-left: 450px;
+width: 600px;
+height: 150px;
+margin-inline: auto;
+}
+
+.div1{
+margin: 9px;
+padding: 25px;
+background: #efefef;
+text-align: center;
+font-size: 1em;
+color: #000000;
+width: 35px;
+height: 40px;
+align-items: center;
+float: left;
+}
+.div2{
+margin: 9px;
+padding: 25px;
+background: #efefef;
+text-align: center;
+font-size: 1em;
+color: #000000;
+width: 32px;
+height: 25px;
+align-items: center;
+float: left;
+}
+.div3{
+margin: 9px;
+padding: 25px;
+background: #efefef;
+text-align: center;
+font-size: 1em;
+color: #000000;
+width: 35px;
+height: 1px;
+align-items: center;
+float: left;
+}
+.div4{
+margin: 5px;
+padding: 25px;
+background: #efefef;
+text-align: center;
+font-size: 1em;
+color: #000000;
+width: 35px;
+height: 42px;
+align-items: center;
+float: right;
+margin-right: 70px;
+}
+.div5{
+margin: 1px;
+padding: 25px;
+background: #efefef;
+text-align: center;
+font-size: 1em;
+color: #000000;
+width: 32px;
+height: 25px;
+align-items: center;
+float: left;
+margin-left: 10px;
+}
+.div6{
+margin:1px;
+padding: 25px;
+background: #efefef;
+text-align: center;
+font-size: 1em;
+color: #000000;
+width: 35px;
+height: 1px;
+align-items: center;
+float: left;
+margin-right:30px ;
+margin-top: -55px;
+margin-left: 10px;
+}
+aside {
+color: #020202;
+font-size: 1em;
+text-align: center;
+padding: 8px;
+background-color: #dbdcd1;
+background: #1dac10;
+width: 100px;
+height: 379px;
+margin-left: auto;
+float: right;
+margin-top: -300px;
+}
+header {
+background: #8BDC8358;
+width: 600px;
+height: 95px;
+margin-right: auto;
+text-align: center
+}
+footer {
+color: #000000;
+font-size: 1em;
+background: #A4E8ADDB;
+width: 600px;
+height: 95px;
+margin-bottom: 20;
+text-align: center
+}
+article {
+color: #000000;
+font-size: 1em;
+text-align: center;
+height: 300px;
+width: 370px;
+background-color: rgb(205,231,245);
+display: flex;
+}
+#article {
+flex-flow:wrap;
+
+}
+h1 {
+text-align: center;
+}
+nav {
+color: #000000;
+font-size: 1em;
+text-align: center;
+padding: 8px;
+background-color: #dbdcd1;
+background: #479240;
+width: 100px;
+height: 379px;
+margin-left: auto;
+float: right;
+margin-top: -300px;
+}
+</style>
+</head>
+<h1 id="h1">
+Layout com Flexbox - III</h1>
+<body>
+<header id="header">< header> </header>
+<main class="container"> 
+<article id="article">< article >
+<div id="flex-container">
+<div class="div1"> div </div>
+<div class="div2"> div </div>
+<div class="div3"> div </div>
+<div class="div4"> div </div>
+<div class="div5"> div </div>
+<div class="div6"> div </div>
+</div>
+</article>
+<nav id="nav">< nav> </nav>
+<aside id="aside">< aside ></aside>
+</main>
+<footer id="footer">< footer ></footer>
+</header>
+</body>
+</html>
