@@ -1,3 +1,3 @@
 # WEB1
 
-Meus código desenvolvidos ao longo da cadeira de web1
+Meus códigos desenvolvidos ao longo da cadeira de web1
